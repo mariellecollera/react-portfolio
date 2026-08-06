@@ -7,7 +7,7 @@ function NavbarSection() {
     <Navbar expand="md" className="sticky-top py-1">
       <Container>
         <Navbar.Brand href="#hero">
-          <div className="folder-tab me-2" aria-hidden="true"></div>
+          <div className="folder-sm me-2" aria-hidden="true"></div>
           My<span>Portfolio</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navMenu" />
