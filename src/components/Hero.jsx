@@ -39,7 +39,7 @@ function Hero() {
   }, [currentText, isDeleting, roleIndex]);
 
   return (
-    <section id="hero" className="my-5 px-0 pt-5 pb-5">
+    <section id="hero">
       <Container>
         <Row className="align-items-start g-4">
           <Col lg={5} className="text-center text-lg-start">
