@@ -179,8 +179,8 @@ h2 {
 
 @media (min-width: 576px) {
     .profile-image {
-        width: 95px;
-        height: 125px;
+        width: 140px;
+        height: 170px;
         border-width: 2px;
     }
 }
