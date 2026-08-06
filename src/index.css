@@ -5,7 +5,7 @@
     --color-accent: #6c9a34;
 
     --shift-1: #eef2f7;
-    --shift-2: #f7f0ec;
+    --shift-2: #ffffe6;
     --shift-3: #eef7f0;
 }
 
@@ -15,19 +15,22 @@ body {
     font-family: var(--font-arial);
 }
 
+
 nav {
-    background-image: linear-gradient(#C9D3E6 60%, white);
+    background-color: #C9D3E6;
 }
 
 .navbar-brand {
-    font-family: var(--font-serif);
-    font-size: 1.7rem;
-    color: var(--color-text) !important;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  color: var(--color-text) !important;
 }
 
 .navbar-brand span {
-    font-style: italic;
-    font-weight: 700;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .navbar-nav {
@@ -42,6 +45,28 @@ nav {
 
 .nav-link:hover {
     color: var(--color-accent) !important;
+}
+
+.folder-tab {
+    position: relative;
+    width: 40px;
+    height: 24px;
+    background: linear-gradient(to top, #ffffff 2%, #b3e472 98%);
+    border: black solid 1.5px;
+    border-radius: 3px 6px 3px 3px;
+}
+
+.folder-tab::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -1px;
+    width: 18px;
+    height: 5px;
+    background: inherit;
+    border: black solid 1.5px;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
 }
 
 h1, h2 {
@@ -91,14 +116,14 @@ h1, h2 {
     border: black solid 1.5px;
     border-radius: 100px;
     padding: 0 20px 0 20px;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .button:hover {
     background: linear-gradient(#ffffff 5%, #6c6c6c 95%);
     border: black solid 1.5px;
     color: black;
-    transform: scale(1.05);
+    transform: scale(1.00);
     box-shadow: 0px 4px 8px #676767;
 }
 
@@ -108,9 +133,18 @@ h1, h2 {
     box-shadow: none;
 }
 
-#portfolio {
+.button:focus {
+    border: #b3e472 solid 1.5px;
+}
+
+#projects {
     padding: 3rem 0;
     transition: background-color 0.4s ease;
+}
+
+.card {
+    border: black solid 1.5px;
+    border-radius: 12px;
 }
 
 .bg-shift-1 { background-color: var(--shift-1); }
@@ -130,6 +164,11 @@ h1, h2 {
 
 .project-title:hover {
     color: var(--color-accent);
+}
+
+.modal-content {
+    border: black solid 1.5px;
+    border-radius: 12px; 
 }
 
 .modal-body a {

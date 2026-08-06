@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import projects from "../data/projects.jsx";
 
-function Portfolio() {
+function Projects() {
   const [activeBg, setActiveBg] = useState(null); // holds bgClass string or null
   const [openModalId, setOpenModalId] = useState(null); // holds project id or null
 
@@ -12,9 +12,9 @@ function Portfolio() {
 
   return (
     <>
-      <section id="portfolio" className={activeBg || ""}>
+      <section id="projects" className={activeBg || ""}>
         <div className="container">
-          <p className="section-title">[ my portfolio ]</p>
+          <p className="section-title">[ my projects ]</p>
           <div className="row g-4 justify-content-center">
             {projects.map((project) => (
               <div className="col-12 col-sm-6 col-md-4" key={project.id}>
@@ -53,6 +53,7 @@ function Portfolio() {
           show={openModalId === project.id}
           onHide={() => setOpenModalId(null)}
           centered
+          size="lg"
         >
           <Modal.Header closeButton>
             <Modal.Title>{project.title}</Modal.Title>
@@ -73,19 +74,10 @@ function Portfolio() {
               </p>
             )}
           </Modal.Body>
-          <Modal.Footer>
-            <button
-              type="button"
-              className="btn button"
-              onClick={() => setOpenModalId(null)}
-            >
-              Close
-            </button>
-          </Modal.Footer>
         </Modal>
       ))}
     </>
   );
 }
 
-export default Portfolio;
+export default Projects;
