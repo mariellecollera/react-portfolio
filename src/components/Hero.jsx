@@ -39,10 +39,9 @@ function Hero() {
   }, [currentText, isDeleting, roleIndex]);
 
   return (
-    <section id="hero" className="m-5 pt-3 pb-5">
+    <section id="hero" className="my-5 px-0 pt-5 pb-5">
       <Container>
         <Row className="align-items-start g-4">
-          {/* Left Column: Intro Text & Typing Animation */}
           <Col lg={5} className="text-center text-lg-start">
             <p className="hero-subtitle mb-0">Welcome! I am </p>
             <h1 className="mt-0">
@@ -52,12 +51,11 @@ function Hero() {
               Specializing in <span className="typing-text">{currentText}</span>
             </p>
             <p className="hero-intro">
-              A 3rd year BS Computer Science student passionate about crafting
-              intuitive user interfaces and modern web applications.
+              As a 3rd year BS Computer Science student, I am passionate about
+              bridging the line between tech and design.
             </p>
           </Col>
 
-          {/* Right Column: Business ID Card */}
           <Col lg={7} className="d-flex flex-column align-items-center align-items-lg-end">
             <div className="hero-card-container">
               <div className="business-card">
@@ -99,7 +97,7 @@ function Hero() {
                     </div>
                     <div className="personal-info">
                       <span className="ident">Email</span>
-                      <span className="value" id="email">
+                      <span className="value">
                         marielleannecollera@gmail.com
                       </span>
                     </div>

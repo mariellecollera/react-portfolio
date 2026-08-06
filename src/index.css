@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: linear-gradient(#C9D3E6 60%, white);
+    background-image: linear-gradient(#C9D3E6 15%, white, #C9D3E6, white);
     background-repeat: no-repeat;
     font-family: var(--font-arial);
 }
@@ -18,6 +18,7 @@ body {
 
 nav {
     background-color: #C9D3E6;
+    border-bottom: black dashed 1.5px;
 }
 
 .navbar-brand {
@@ -80,18 +81,6 @@ h2 {
     font-family: var(--font-serif);
 }
 
-.hero-name-title {
-    font-family: var(--font-serif);
-    font-weight: 700;
-    color: var(--color-text);
-    background: none;
-    border: none;
-    border-radius: 0;
-    width: auto;
-    margin: 15px 0 10px 0;
-    text-align: inherit;
-}
-
 .hero-subtitle {
     font-family: var(--font-serif);
     font-size: 1.4rem;
@@ -144,6 +133,7 @@ h2 {
 .business-card:hover {
     transform: scale(1.03) rotate(-1deg);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .circle-pill {
