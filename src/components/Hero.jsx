@@ -43,7 +43,7 @@ function Hero() {
       <Container>
         <Row className="align-items-start g-4">
           <Col lg={5} className="text-center text-lg-start">
-            <p className="hero-subtitle mb-0">Welcome! I am </p>
+            <p className="hero-subtitle mb-0">Hello! I am </p>
             <h1 className="mt-0">
               <span className="circle-pill">Marielle</span><b>Collera</b>
             </h1>
@@ -56,7 +56,7 @@ function Hero() {
             </p>
           </Col>
 
-          <Col lg={7} className="d-flex flex-column align-items-center align-items-lg-end">
+          <Col xs={10} lg={7} className="mx-auto d-flex flex-column justify-content-center align-items-center align-items-lg-end">
             <div className="hero-card-container">
               <div className="business-card">
                 <section className="heading d-flex justify-content-between align-items-center mb-3">

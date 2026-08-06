@@ -307,7 +307,7 @@ h2 {
 }
 
 .modal-content {
-    border: black solid 1.5px;
+    border: black dashed 1.5px;
     border-radius: 12px;
 }
 
@@ -347,6 +347,7 @@ h2 {
     border-radius: 10px 20px 10px 10px;
     max-width: 600px;
     padding: 20px;
+    margin: 40px auto;
 }
 
 .folder-lg::before {
@@ -363,18 +364,13 @@ h2 {
     z-index: -1;
 }
 
-.footer-text {
-    align-items: center;
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-}
-
 footer {
     background-color: white;
     border-top: black dashed 1.5px;
+    min-height: 50px;
 }
 
 .footer-text {
-    align-items: center;
+    font-family: var(--font-serif);
     font-size: 0.85rem;
 }
