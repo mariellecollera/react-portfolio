@@ -169,8 +169,8 @@ h2 {
 }
 
 .profile-image {
-    width: 110px;
-    height: 140px;
+    width: 95px;
+    height: 125px;
     object-fit: cover;
     border: 1.5px solid #000000;
     border-radius: 4px;
