@@ -7,7 +7,6 @@ function Contact() {
   const handleSubmit = (e) => {
     const form = formRef.current;
     e.preventDefault();
-    e.stopPropagation();
 
     if (!form.checkValidity()) {
       setValidated(true);
@@ -26,8 +25,10 @@ function Contact() {
   return (
     <section id="contact" className="py-5">
       <div className="container">
-        <h2>Contact Me</h2>
-        <p className="section-title">[ get in touch ]</p>
+        <div className="text-center">
+          <h2 className="circle-pill">Contact Me</h2>
+          <p className="section-title">[ get in touch ]</p>
+        </div>
 
         <form
           ref={formRef}

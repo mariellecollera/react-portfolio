@@ -21,16 +21,16 @@ nav {
 }
 
 .navbar-brand {
-  display: inline-flex;
-  align-items: center;
-  font-family: var(--font-serif);
-  font-size: 1.7rem;
-  color: var(--color-text) !important;
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-serif);
+    font-size: 1.7rem;
+    color: var(--color-text) !important;
 }
 
 .navbar-brand span {
-  font-style: italic;
-  font-weight: 700;
+    font-style: italic;
+    font-weight: 700;
 }
 
 .navbar-nav {
@@ -69,30 +69,165 @@ nav {
     border-radius: 4px 4px 0 0;
 }
 
-h1, h2 {
-    background-image: linear-gradient(#ffffff 5%, #fefe04 95%);
-    border: black solid 1.5px;
-    border-radius: 50%;
-    width: min(250px, 80%);
+h1 {
     text-align: center;
     font-family: var(--font-serif);
-    font-weight: normal;
-    margin: 40px auto 20px auto;
+    font-size: 3.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--font-serif);
+}
+
+.hero-name-title {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--color-text);
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: auto;
+    margin: 15px 0 10px 0;
+    text-align: inherit;
+}
+
+.hero-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--color-text);
+}
+
+.typing-text {
+    color: var(--color-accent);
+    font-weight: bold;
+    border-right: 2px solid var(--color-accent);
+    padding-right: 4px;
+    animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--color-accent);
+    }
 }
 
 .section-title {
     text-align: center;
     font-family: var(--font-serif);
     font-size: 1.75rem;
-    margin-top: -10px;
 }
 
-.hero-intro {
-    font-size: 1.05rem;
-    color: var(--color-text);
-    max-width: 32rem;
+.hero-card-container {
+    max-width: 500px;
+    width: 100%;
 }
 
+.business-card {
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+    border-radius: 10px;
+    padding: 20px 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: left;
+}
+
+.business-card:hover {
+    transform: scale(1.03) rotate(-1deg);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+.circle-pill {
+    display: inline-block;
+    padding: 0 20px;
+    background-image: linear-gradient(#ffffff 5%, #fefe04 95%);
+    border: black solid 1.5px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-weight: normal;
+}
+
+.business-card-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.card-id {
+    font-family: var(--font-arial);
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    color: #1c1c1c;
+    line-height: 1.2;
+}
+
+.profile-image {
+    width: 110px;
+    height: 140px;
+    object-fit: cover;
+    border: 1.5px solid #000000;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+@media (min-width: 576px) {
+    .profile-image {
+        width: 140px;
+        height: 170px;
+        border-width: 2px;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-image {
+        width: 170px;
+        height: 200px;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1.5px dotted #777777;
+    padding-bottom: 3px;
+}
+
+.personal-info .ident {
+    font-family: var(--font-arial);
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #000000;
+}
+
+.personal-info .value {
+    font-family: var(--font-arial);
+    font-size: 0.85rem;
+    color: #000000;
+    text-align: right;
+}
+
+.description .card-text {
+    font-family: var(--font-arial);
+    font-size: 0.85rem;
+    color: #1c1c1c;
+}
 
 .heading p {
     display: inline-block;
@@ -102,7 +237,7 @@ h1, h2 {
 
 .card-title {
     font-family: var(--font-serif);
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -123,7 +258,6 @@ h1, h2 {
     background: linear-gradient(#ffffff 5%, #6c6c6c 95%);
     border: black solid 1.5px;
     color: black;
-    transform: scale(1.00);
     box-shadow: 0px 4px 8px #676767;
 }
 
@@ -147,13 +281,22 @@ h1, h2 {
     border-radius: 12px;
 }
 
-.bg-shift-1 { background-color: var(--shift-1); }
-.bg-shift-2 { background-color: var(--shift-2); }
-.bg-shift-3 { background-color: var(--shift-3); }
+.bg-shift-1 {
+    background-color: var(--shift-1);
+}
+
+.bg-shift-2 {
+    background-color: var(--shift-2);
+}
+
+.bg-shift-3 {
+    background-color: var(--shift-3);
+}
 
 .project-card-img {
     width: 100%;
     height: 250px;
+    border-radius: 10.5px 10.5px 0 0;
     object-fit: cover;
 }
 
@@ -168,7 +311,17 @@ h1, h2 {
 
 .modal-content {
     border: black solid 1.5px;
-    border-radius: 12px; 
+    border-radius: 12px;
+}
+
+.modal-header {
+    border-bottom: black dashed 1.5px;
+}
+
+.modal-title {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .modal-body a {
