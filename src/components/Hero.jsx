@@ -69,8 +69,10 @@ function Hero() {
                     </p>
                   </div>
                   <div className="card-id text-end">
-                    IDENTIFICATION CARD
+                    <span className="d-md-none">ID CARD</span>
+                    <span className="d-none d-md-inline">IDENTIFICATION CARD</span>
                     <br />
+
                     NO. 20051008
                   </div>
                 </section>
@@ -110,7 +112,7 @@ function Hero() {
                 </div>
               </div>
 
-              <section className="socials d-flex justify-content-center gap-3 mt-4">
+              <section className="d-flex justify-content-center gap-3 mt-4">
                 <a
                   href="https://www.facebook.com/marielle.collera/"
                   target="_blank"
