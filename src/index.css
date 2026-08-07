@@ -82,6 +82,17 @@ h2 {
     font-family: var(--font-serif);
 }
 
+.circle-pill {
+    display: inline-block;
+    padding: 0 20px;
+    background-image: linear-gradient(#ffffff 5%, #fefe04 95%);
+    border: black solid 1.5px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-weight: normal;
+}
+
 #hero,
 #projects,
 #contact {
@@ -129,7 +140,7 @@ h2 {
     background-color: #ffffff;
     border: 1.5px solid #000000;
     border-radius: 10px;
-    padding: 15px 20px 20px 20px;
+    padding: 10px 15px 15px 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease-in-out,
         box-shadow 0.3s ease-in-out;
@@ -141,17 +152,6 @@ h2 {
     transform: scale(1.03) rotate(-1deg);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-}
-
-.circle-pill {
-    display: inline-block;
-    padding: 0 20px;
-    background-image: linear-gradient(#ffffff 5%, #fefe04 95%);
-    border: black solid 1.5px;
-    border-radius: 50%;
-    text-align: center;
-    font-family: var(--font-serif);
-    font-weight: normal;
 }
 
 .business-card-title {
@@ -186,6 +186,10 @@ h2 {
 }
 
 @media (min-width: 768px) {
+    .business-card {
+        padding: 15px 20px 20px 20px;
+    }
+
     .profile-image {
         width: 170px;
         height: 200px;
