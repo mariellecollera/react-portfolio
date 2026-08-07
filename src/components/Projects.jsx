@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
+import Row from "react-bootstrap/Row";
 import projects from "../data/ProjectCards.jsx";
 
 function Projects() {
@@ -15,7 +16,7 @@ function Projects() {
       <section id="projects" className={activeBg || ""}>
         <div className="container">
           <p className="section-title italic-text">[ my projects ]</p>
-          <div className="row g-4 justify-content-center">
+          <Row className="g-4 justify-content-center">
             {projects.map((project) => (
               <div className="col-12 col-sm-6 col-md-4" key={project.id}>
                 <div className="card h-100">
@@ -43,7 +44,7 @@ function Projects() {
                 </div>
               </div>
             ))}
-          </div>
+          </Row>
         </div>
       </section>
 
