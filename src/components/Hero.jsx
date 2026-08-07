@@ -45,7 +45,7 @@ function Hero() {
           <Col lg={5}>
             <p className="hero-subtitle mb-0">Hello! I am </p>
             <h1 className="mt-0">
-              <span className="circle-pill">Marielle</span><b>Collera</b>
+              <span className="circle-pill"> Marielle </span><b>Collera</b>
             </h1>
             <p className="hero-subtitle">
               Specializing in <span className="typing-text">{currentText}</span>
@@ -117,7 +117,7 @@ function Hero() {
                   href="https://www.facebook.com/marielle.collera/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button"
+                  className="btn button"
                 >
                   Facebook
                 </a>
@@ -125,7 +125,7 @@ function Hero() {
                   href="https://www.linkedin.com/in/mariellecollera/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button"
+                  className="btn button"
                 >
                   LinkedIn
                 </a>
@@ -133,7 +133,7 @@ function Hero() {
                   href="https://github.com/mariellecollera"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button"
+                  className="btn button"
                 >
                   GitHub
                 </a>

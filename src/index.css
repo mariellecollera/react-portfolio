@@ -29,7 +29,7 @@ nav {
     color: var(--color-text) !important;
 }
 
-.navbar-brand span {
+.italic-text {
     font-style: italic;
     font-weight: 700;
 }
@@ -46,6 +46,21 @@ nav {
 
 .nav-link:hover {
     color: var(--color-accent) !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+.navbar-brand:focus-visible,
+.nav-link:focus-visible,
+.button:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-toggler {
+    border: black solid 1.5px;
 }
 
 .folder-sm {
@@ -219,14 +234,14 @@ h2 {
 
 .personal-info .value {
     font-family: var(--font-arial);
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     color: #000000;
     text-align: right;
 }
 
 .description .card-text {
     font-family: var(--font-arial);
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     color: #1c1c1c;
 }
 
@@ -266,10 +281,6 @@ h2 {
     background: linear-gradient(#ffffff 5%, #6c6c6c 95%);
     transform: scale(0.95);
     box-shadow: none;
-}
-
-.button:focus {
-    border: #b3e472 solid 1.5px;
 }
 
 #projects {

@@ -27,7 +27,7 @@ function Contact() {
       <div className="container">
         <div className="text-center">
           <h2 className="circle-pill">Contact Me</h2>
-          <p className="section-title">[ get in touch ]</p>
+          <p className="section-title italic-text">[ get in touch ]</p>
         </div>
 
         <form

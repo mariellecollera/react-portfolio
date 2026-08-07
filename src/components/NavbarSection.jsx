@@ -8,14 +8,14 @@ function NavbarSection() {
       <Container>
         <Navbar.Brand href="#hero">
           <div className="folder-sm me-2" aria-hidden="true"></div>
-          My<span>Portfolio</span>
+          My<span className="italic-text">Portfolio</span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navMenu" />
+        <Navbar.Toggle className="navbar-toggler" aria-controls="navMenu" />
         <Navbar.Collapse id="navMenu" className="justify-content-end">
           <Nav>
-            <Nav.Link href="#hero">Home</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#hero"><span className="italic-text">[01]</span>  Home</Nav.Link>
+            <Nav.Link href="#projects"><span className="italic-text">[02]</span>  Projects</Nav.Link>
+            <Nav.Link href="#contact"><span className="italic-text">[03]</span>  Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
