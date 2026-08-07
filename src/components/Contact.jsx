@@ -41,17 +41,17 @@ function Contact() {
 
           <div className="folder-lg me-2">
             <div className="col-12 col-md-8 mb-2">
-              <label htmlFor="name" className="form-label">Name</label>
+              <label htmlFor="name" className="form-label">Name<span className="text-danger">*</span></label>
               <input type="text" className="form-control" id="name" name="name" required />
               <div className="invalid-feedback">Please enter your name.</div>
             </div>
             <div className="col-12 col-md-8 mb-2">
-              <label htmlFor="email" className="form-label">Email</label>
+              <label htmlFor="email" className="form-label">Email<span className="text-danger">*</span></label>
               <input type="email" className="form-control" id="email" name="email" required />
               <div className="invalid-feedback">Please enter a valid email address.</div>
             </div>
             <div className="col-12 mb-2">
-              <label htmlFor="message" className="form-label">Message</label>
+              <label htmlFor="message" className="form-label">Message<span className="text-danger">*</span></label>
               <textarea className="form-control" id="message" name="message" rows="4" required></textarea>
               <div className="invalid-feedback">Please enter a message.</div>
             </div>
