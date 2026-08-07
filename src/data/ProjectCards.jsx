@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     bgClass: "bg-shift-1",
     title: "StallionScore",
-    image: "/stallionscore.png",
+    image: "/proj1_img.png",
     cardText:
       "High-fidelity wireframes for StallionScore, a rating and feedback platform for anything related to De La Salle Lipa.",
     stack: "Figma",
@@ -35,7 +35,7 @@ const projects = [
     id: 2,
     bgClass: "bg-shift-2",
     title: "KARipas",
-    image: "/karipas.png",
+    image: "/proj2_img.png",
     cardText:
       "High-fidelity wireframes for KARipas, an AI Camera-Based Traffic Light Control System.",
     stack: "Figma",
@@ -65,7 +65,7 @@ const projects = [
     id: 3,
     bgClass: "bg-shift-3",
     title: "Birthday Greeting Webpage",
-    image: "/bday_greeting.png",
+    image: "/proj3_img.png",
     cardText:
       "An interactive birthday webpage with a blow-to-light-candles animation (open-sourced) and draggable elements.",
     stack: "HTML, CSS, JavaScript",
