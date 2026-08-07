@@ -67,27 +67,9 @@ button:focus-visible,
     border: black solid 1.5px;
 }
 
-.folder-sm {
-    position: relative;
+.icon {
     width: 40px;
-    height: 24px;
-    background: linear-gradient(to top, #ffffff 2%, #b3e472 98%);
-    border: black solid 1.5px;
-    border-radius: 3px 6px 3px 3px;
-}
-
-.folder-sm::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: -1px;
-    width: 18px;
-    height: 8px;
-    background: inherit;
-    border: black solid 1.5px;
-    border-bottom: none;
-    border-radius: 4px 4px 0 0;
-    z-index: -1;
+    height: 40px;
 }
 
 h1 {
