@@ -374,6 +374,21 @@ h2 {
     z-index: -1;
 }
 
+.contact-pill {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    transform: rotate(8deg);
+    padding: 0 20px;
+    background-image: var(--yellow-gradient);
+    border: black solid 1.5px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-weight: normal;
+}
+
 footer {
     background-color: var(--color-white);
     border-top: black dashed 1.5px;

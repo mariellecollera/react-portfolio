@@ -25,11 +25,7 @@ function Contact() {
   return (
     <section id="contact" className="py-4">
       <div className="container">
-        <div className="text-center">
-          <h2 className="circle-pill">Contact Me</h2>
-          <p className="section-title italic-text">[ get in touch ]</p>
-        </div>
-
+          <p className="section-title italic-text">[ contact me ]</p>
         <form
           ref={formRef}
           id="contactForm"
@@ -40,6 +36,7 @@ function Contact() {
         >
 
           <div className="folder-lg me-2">
+            <h2 className="contact-pill">Get In Touch</h2>
             <div className="col-12 col-md-8 mb-2">
               <label htmlFor="name" className="form-label">Name<span className="text-danger">*</span></label>
               <input type="text" className="form-control" id="name" name="name" required />
