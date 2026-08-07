@@ -3,14 +3,23 @@
     --font-arial: "Arial", sans-serif;
     --color-text: #1c1c1c;
     --color-accent: #6c9a34;
+    --color-green: #b3e472;
+    --color-yellow: #fefe04;
+    --color-blue: #C9D3E6;
+    --color-gray: #6c6c6c;
+    --color-white: #ffffff;
 
+    --green-gradient: linear-gradient(to top, var(--color-white) 2%, var(--color-green) 98%);
+    --yellow-gradient: linear-gradient(var(--color-white) 5%, var(--color-yellow) 95%);
+    --blue-gradient: linear-gradient(var(--color-blue) 15%, var(--color-white), var(--color-blue), var(--color-white));
+    --gray-gradient: linear-gradient(var(--color-white) 5%, var(--color-gray) 95%);
     --shift-1: #eef2f7;
     --shift-2: #ffffe6;
     --shift-3: #eef7f0;
 }
 
 body {
-    background-image: linear-gradient(#C9D3E6 15%, white, #C9D3E6, white);
+    background-image: var(--blue-gradient);
     background-repeat: no-repeat;
     font-family: var(--font-arial);
 }
@@ -86,7 +95,7 @@ h2 {
 .circle-pill {
     display: inline-block;
     padding: 0 20px;
-    background-image: linear-gradient(#ffffff 5%, #fefe04 95%);
+    background-image: var(--yellow-gradient);
     border: black solid 1.5px;
     border-radius: 50%;
     text-align: center;
@@ -138,8 +147,8 @@ h2 {
 }
 
 .business-card {
-    background-color: #ffffff;
-    border: 1.5px solid #000000;
+    background-color: var(--color-white);
+    border: black solid 1.5px;
     border-radius: 10px;
     padding: 10px 15px 15px 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
@@ -165,7 +174,7 @@ h2 {
     font-family: var(--font-arial);
     font-size: 0.75rem;
     letter-spacing: 0.5px;
-    color: #1c1c1c;
+    color: var(--color-text);
     line-height: 1.2;
 }
 
@@ -215,13 +224,13 @@ h2 {
     font-family: var(--font-arial);
     font-weight: 700;
     font-size: 0.75rem;
-    color: #000000;
+    color: var(--color-text);
 }
 
 .personal-info .value {
     font-family: var(--font-arial);
     font-size: 0.80rem;
-    color: #000000;
+    color: var(--color-text);
     text-align: right;
 }
 
@@ -248,8 +257,8 @@ h2 {
     font-family: var(--font-serif);
     font-weight: bold;
     font-size: 1.0625rem;
-    color: black;
-    background: linear-gradient(#ffffff 5%, #b3e472 95%);
+    color: var(--color-text);
+    background: var(--green-gradient);
     border: black solid 1.5px;
     border-radius: 100px;
     padding: 0 20px 0 20px;
@@ -257,14 +266,14 @@ h2 {
 }
 
 .button:hover {
-    background: linear-gradient(#ffffff 5%, #6c6c6c 95%);
+    background: var(--gray-gradient);
     border: black solid 1.5px;
-    color: black;
+    color: var(--color-text);
     box-shadow: 0px 4px 8px #676767;
 }
 
 .button:active {
-    background: linear-gradient(#ffffff 5%, #6c6c6c 95%);
+    background: var(--gray-gradient);
     transform: scale(0.95);
     box-shadow: none;
 }
@@ -329,11 +338,11 @@ h2 {
 }
 
 .modal-body a:hover {
-    color: #fefe04;
+    color: var(--color-yellow);
 }
 
 .modal-body a:visited {
-    color: #6c6c6c;
+    color: var(--color-gray);
 }
 
 #contact .form-label {
@@ -342,7 +351,7 @@ h2 {
 }
 
 .folder-lg {
-    background: linear-gradient(to top, #ffffff 2%, #b3e472 98%);
+    background: var(--green-gradient);
     position: relative;
     border: black solid 1.5px;
     border-radius: 10px 20px 10px 10px;
@@ -366,7 +375,7 @@ h2 {
 }
 
 footer {
-    background-color: white;
+    background-color: var(--color-white);
     border-top: black dashed 1.5px;
     min-height: 50px;
 }
